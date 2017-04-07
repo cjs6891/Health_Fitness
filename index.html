@@ -34,74 +34,94 @@ http://jquery.com/
 
 <script src="./js/featherlight.js" type="text/javascript" charset="utf-8"></script>
 
+<script>
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+if(mm<10) {
+    mm='0'+mm
+} 
+
+today = yyyy+'.'+mm+'.'+dd;
+</script>
+
 </head>
 <body>
 
 <!-- &nbsp; -->
 <div class="container">
 <div class="page-header">
-  <h1 class="IndieFlower">Simple, Yet Highly Effective <small>Dumbbell Workout Routine</small></h1>
+  <h1 class="IndieFlower"><b>Simple, Yet Highly Effective <small>Dumbbell Workout Routine</small></b></h1>
 </div>
 
-<div class="jumbotron col-md-12 col-sm-12">
-  <h2 class="SpecialElite">Day 1 / <small>Monday</small></h2>
+<div class="jumbotron col-sm-12 col-md-12 col-lg-12 col-xl-12">
+  <h2 class="SpecialElite">Day 1 / <small class=""><script>document.write(today);</script></small></h2>
   <div class="black-line"></div>
 
-<div class="col-md-4 col-sm-6">
-  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/FlatBenchPress.png">Flat Bench Press <small>Chest</small></a></h4>
-  <p class="SpecialElite"><label><input type="checkbox" value="1"></label> Set 1:&nbsp;&nbsp;15 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 2:&nbsp;&nbsp;&nbsp;&nbsp;8 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 3:&nbsp;&nbsp;&nbsp;&nbsp;8 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 4:&nbsp;&nbsp;&nbsp;&nbsp;8 repetition(s)</p>
+<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/FlatBenchPress.png">Flat Bench Press <small>Chest</small></a><br><input type="text" class="form-control" placeholder="Notes... ex. Set: 1, 45lbs., Set(s) 2-4: 65lbs."></h4>
+  <p class="SpecialElite"><input type="checkbox" value="1"><label class="strikethrough">&nbsp;Set 1:&nbsp;15 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 2:&nbsp;&nbsp;8 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 3:&nbsp;&nbsp;8 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 4:&nbsp;&nbsp;8 r3p5</label></p>
 </div>
 
-<div class="col-md-4 col-sm-6">
-  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/InclinePress.png">Incline Press <small>Upper Chest</small></a></h4>
-  <p class="SpecialElite"><label><input type="checkbox" value=""></label> Set 1:&nbsp;&nbsp;8 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 2:&nbsp;&nbsp;8 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 3:&nbsp;&nbsp;8 repetition(s)
-  <p class="SpecialElite">&nbsp;</p>
-</div>
-
-<div class="col-md-4 col-sm-6">
-  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/Squat.png">Squat <small>Quadriceps</small></a></h4>
-  <p class="SpecialElite"><label><input type="checkbox" value=""></label> Set 1:&nbsp;&nbsp;10 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 2:&nbsp;&nbsp;10 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 3:&nbsp;&nbsp;10 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 4:&nbsp;&nbsp;10 repetition(s)<br>
-  </p>
-</p>
-</div>
-
-<div class="col-md-4 col-sm-6">
-  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/AlternateCurl.png">Alternate Curl <small>Biceps</small></a></h4>
-  <p class="SpecialElite"><label><input type="checkbox" value=""></label> Set 1:&nbsp;&nbsp;12 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 2:&nbsp;&nbsp;12 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 3:&nbsp;&nbsp;12 repetition(s)
-  <p class="SpecialElite">&nbsp;</p>
-  </p>
-</div>
-
-<div class="col-md-4 col-sm-6">
-  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/Pullover.png">Pullover <small>Back/Chest</small></a></h4>
-  <p class="SpecialElite"><label><input type="checkbox" value=""></label> Set 1:&nbsp;&nbsp;12 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 2:&nbsp;&nbsp;12 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 3:&nbsp;&nbsp;12 repetition(s)
+<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/InclinePress.png">Incline Press <small>Upper Chest</small></a><br><input type="text" class="form-control" placeholder="Notes... ex. Set: 1, 45lbs., Set(s) 2-4: 65lbs."></h4>
+  <p class="SpecialElite"><input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 1:&nbsp;8 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 2:&nbsp;8 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 3:&nbsp;8 r3p5</label>
   <p class="SpecialElite">&nbsp;</p>
 </p>
 </div>
 
-<div class="col-md-4 col-sm-6">
-  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/AbdominalCrunch.png">Abdominal Crunch <small>Abdominals</small></a></h4>
-  <p class="SpecialElite"><label><input type="checkbox" value=""></label> Set 1:&nbsp;&nbsp;15 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 2:&nbsp;&nbsp;15 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 3:&nbsp;&nbsp;15 repetition(s)<br>
-  <label><input type="checkbox" value=""></label> Set 4:&nbsp;&nbsp;15 repetition(s)</p>
+<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/Squat.png">Squat <small>Quadriceps</small></a><br><input type="text" class="form-control" placeholder="Notes... ex. Set: 1, 45lbs., Set(s) 2-4: 65lbs."></h4>
+  <p class="SpecialElite">
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 1:&nbsp;10 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 2:&nbsp;10 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 3:&nbsp;10 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 4:&nbsp;10 r3p5</label></p>
+  <br>
 </div>
+
+<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/AlternateCurl.png">Alternate Curl <small>Biceps</small></a><br><input type="text" class="form-control" placeholder="Notes... ex. Set: 1, 45lbs., Set(s) 2-4: 65lbs."></h4>
+  <p class="SpecialElite"><input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 1:&nbsp;&nbsp;12 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 2:&nbsp;&nbsp;12 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 3:&nbsp;&nbsp;12 r3p5</label></p>
+  <br>
+  <br>
+  <br>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/Pullover.png">Pullover <small>Back/Chest</small></a><br><input type="text" class="form-control" placeholder="Notes... ex. Set: 1, 45lbs., Set(s) 2-4: 65lbs."></h4>
+  <p class="SpecialElite"><input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 1:&nbsp;&nbsp;12 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 2:&nbsp;&nbsp;12 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 3:&nbsp;&nbsp;12 r3p5</label>
+  <p class="SpecialElite">&nbsp;</p>
+</p>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <h4 class="SpecialElite"><a href="#" data-featherlight="./img/AbdominalCrunch.png">Abdominal Crunch <small>Abdominals</small></a><br><input type="text" class="form-control" placeholder="Notes..."></h4>
+  <p class="SpecialElite"><input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 1:&nbsp;&nbsp;15 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 2:&nbsp;&nbsp;15 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 3:&nbsp;&nbsp;15 r3p5</label><br>
+  <input type="checkbox" value=""><label class="strikethrough">&nbsp;Set 4:&nbsp;&nbsp;15 r3p5</label></p>
+</div>
+
 </div>
 
 <div class="jumbotron col-md-12 col-sm-12">
-  <h2 class="SpecialElite">Day 2 / <small>Wednesday</small></h2>
+  <h2 class="SpecialElite">Day 2 / <small class=""><script>document.write(today);</script></small></h2>
   <div class="black-line"></div>
 
 </div>
@@ -109,7 +129,7 @@ http://jquery.com/
 
 
 <div class="jumbotron col-md-12 col-sm-12">
-  <h2 class="SpecialElite">Day 3 / <small>Friday</small></h2>
+  <h2 class="SpecialElite">Day 3 / <small class=""><script>document.write(today);</script></small></h2>
   <div class="black-line"></div>
 
 </div>
